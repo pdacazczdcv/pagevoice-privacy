@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Voice — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #121110; color: #E8E1D4; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; color: #F6D58E; }
+  h2 { font-size: 20px; margin: 32px 0 8px; color: #EFE3C8; }
+  p, li { color: #D8D0C2; }
+  a { color: #F6D58E; }
+  .meta { color: #A39A8B; font-size: 14px; }
+  .lang { display: flex; gap: 12px; margin: 16px 0 8px; }
+  .region { border: 1px solid rgba(246,213,142,.45); border-radius: 12px; padding: 12px 14px; margin: 16px 0 4px; background: rgba(230,180,94,.08); }
+  .region.is-hint { border-color: #F6D58E; box-shadow: 0 0 0 2px rgba(246,213,142,.25); }
+  hr { border: 0; border-top: 1px solid rgba(239,227,200,.15); margin: 48px 0; }
+  @media (prefers-color-scheme: light) {
+    body { background: #F6F0E4; color: #2A2420; }
+    h1 { color: #7A5534; } h2 { color: #4A3A2A; } p, li { color: #3A322B; } a { color: #7A5534; } .meta { color: #6F6456; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Page Voice</h1>
+<p class="meta">Privacy Policy<br>Effective: November 12, 2026</p>
+<div class="region" id="region-note">
+  <b>Europe:</b> if you are in the EEA, the UK or Switzerland, <a href="eu.html">the European (GDPR) policy</a> applies to you.
+</div>
+<p class="meta">This version applies in all other countries.</p>
+
+<section>
+<h2>1. Who we are</h2>
+<p>Page Voice (“the app”) reads books, documents, photos of text and web pages aloud. Developer: Duendest. Contact: <a href="mailto:duendest@duendest.com">duendest@duendest.com</a>.</p>
+
+<h2>2. What stays on your device</h2>
+<ul>
+  <li>The files, texts, books and photos you open, your library, favorites, bookmarks, positions and reading progress are stored only on your device. We don't receive them or keep them on our servers.</li>
+  <li>Text recognition (OCR) runs on the device (Google ML Kit, Tesseract), except in the Huawei AppGallery version, see section 5.</li>
+  <li>The camera is used only to photograph pages you want read aloud. Photos are not sent anywhere (except in the Huawei version).</li>
+</ul>
+
+<h2>3. Speech</h2>
+<p>Speech is produced by the text-to-speech engine installed on your device (usually Google Text-to-Speech). If network voices are on, text may be processed by the engine's provider under its own privacy policy.</p>
+
+<h2>4. Reading text from other apps</h2>
+<p>If you turn on the Page Voice accessibility service yourself, the app can receive the text shown on screen in other apps in order to read it aloud when you ask. That text is used only for speaking at that moment: it is not stored, not sent to us and not used for ads or analytics. You can turn the service off at any time in Android Settings → Accessibility. The floating window over other apps only controls reading.</p>
+
+<h2>5. Third-party services</h2>
+<ul>
+  <li><b>Google Sign-In</b> (optional): we receive your name, email address and profile photo to show them in your profile.</li>
+  <li><b>Google Drive</b> (optional): read-only access to open the files you pick. We never change or delete anything in your Drive.</li>
+  <li><b>Book catalogs and web pages</b>: when you search for or download books (Open Library, Internet Archive, Wikisource, OPDS catalogs) or open links, the app contacts those sites; they see your IP address and handle requests under their own terms.</li>
+  <li><b>Ads</b> (free version): Yandex Ads in Russia (<a href="https://yandex.com/legal/confidential/">Yandex policy</a>), Google AdMob elsewhere (<a href="https://policies.google.com/technologies/ads">how Google uses data</a>). Ad networks may collect the device advertising ID, IP address, device information and ad interactions. Special rules apply in the EEA, the UK and Switzerland, see <a href="eu.html">the European policy</a>. You can reset the advertising ID or opt out of personalization in Android settings. Subscribers see no ads.</li>
+  <li><b>Purchases</b>: subscriptions are processed by Google Play or RuStore. We never receive your card details, only whether your subscription is active.</li>
+  <li><b>Firebase Analytics and Crashlytics</b> (Google): anonymous usage statistics and crash reports (device model, Android and app version, error trace) to find and fix bugs.</li>
+  <li><b>Huawei AppGallery version</b>: to recognize Cyrillic text and for part of the speech, text and images may be sent to Huawei ML Kit cloud services.</li>
+</ul>
+
+<h2>6. What we don't do</h2>
+<p>We don't sell your data, don't collect your contacts, location, SMS or microphone, and don't keep the contents of your files on our servers.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed at children under 13, and we don't knowingly collect their data.</p>
+
+<h2>8. Retention and deletion</h2>
+<p>Data on the device is deleted when you delete it in the app, clear the app's data or uninstall it. You can revoke the app's access to your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. For any question about your data, write to <a href="mailto:duendest@duendest.com">duendest@duendest.com</a>.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. The new version is published on this page with a new date.</p>
+</section>
+</main>
+<script>
+  // Highlights the European link for visitors whose clock is set to a European time zone
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    var nonEu = ['Europe/Moscow', 'Europe/Kaliningrad', 'Europe/Samara', 'Europe/Volgograd', 'Europe/Saratov',
+      'Europe/Ulyanovsk', 'Europe/Astrakhan', 'Europe/Kirov', 'Europe/Minsk', 'Europe/Istanbul', 'Europe/Kyiv',
+      'Europe/Kiev', 'Europe/Chisinau', 'Europe/Belgrade', 'Europe/Sarajevo', 'Europe/Skopje', 'Europe/Podgorica', 'Europe/Tirane'];
+    if (zone.indexOf('Europe/') === 0 && nonEu.indexOf(zone) < 0) {
+      document.getElementById('region-note').classList.add('is-hint');
+    }
+  } catch (e) { /* no Intl: the note stays as is */ }
+</script>
+</body>
+</html>
