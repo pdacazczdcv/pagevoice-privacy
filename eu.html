@@ -37,12 +37,14 @@
 <p>The controller is Duendest, the developer of Page Voice. For any question about your data and to exercise your rights: <a href="mailto:duendest@duendest.com">duendest@duendest.com</a>.</p>
 
 <h2>2. What stays on your device</h2>
-<p>The files, texts, books and photos you open, your library, bookmarks and reading progress are stored only on your device; text recognition (Google ML Kit, Tesseract) runs on the device; camera photos are not sent anywhere. If you turn on the Page Voice accessibility service, on-screen text from other apps is used only to read it aloud at that moment and is neither stored nor sent. We don't collect any of this.</p>
+<p>The files, texts, books and photos you open, your library, bookmarks and reading progress are stored only on your device; camera photos are not sent anywhere except for text recognition (see the table below); offline, text recognition (Google ML Kit, Tesseract) runs on the device. If you turn on the Page Voice accessibility service, on-screen text from other apps is used only to read it aloud at that moment and is neither stored nor sent. We don't collect any of this.</p>
 
 <h2>3. What is processed, why, and on which legal basis</h2>
 <div class="table-wrap"><table>
 <tr><th>Data</th><th>Purpose</th><th>Legal basis (GDPR Art. 6)</th></tr>
 <tr><td>Advertising ID, IP address, device information, ad interactions (Google AdMob)</td><td>Showing ads in the free version, measurement, fraud prevention</td><td>Personalised ads and access to identifiers on the device: your <b>consent</b> (1(a)), asked before ads are shown. If you decline, limited non-personalised ads may be shown based on our <b>legitimate interest</b> (1(f)) in funding the free version.</td></tr>
+<tr><td>Photos you ask the app to read (Google Play version, when online)</td><td>Recognizing the text in the photo through our server in the EU (Firebase Cloud Functions, europe-west1) and Google Cloud Vision. Photos are not stored by us.</td><td><b>Contract</b> (1(b)): reading the photo aloud is what you ask the app to do</td></tr>
+<tr><td>Random anonymous Firebase user ID and a daily usage counter</td><td>Limiting how many photos one user can send per day, so the service stays available; App Check confirms requests come from the genuine app</td><td><b>Legitimate interest</b> (1(f)) in preventing abuse</td></tr>
 <tr><td>Crash reports: device model, Android and app version, error trace, installation ID (Firebase Crashlytics)</td><td>Finding and fixing bugs</td><td><b>Legitimate interest</b> (1(f)) in a stable app</td></tr>
 <tr><td>Pseudonymous usage statistics: app instance ID, sessions, in-app events (Firebase Analytics)</td><td>Understanding which features are used and improving the app</td><td>Your <b>consent</b> (1(a)), asked in the same form as for ads. Until you agree, Analytics is turned off.</td></tr>
 <tr><td>Name, email address, profile photo (optional Google Sign-In)</td><td>Showing your profile in the app</td><td><b>Contract</b> (1(b)), a feature you turn on yourself. The data stays on the device.</td></tr>
@@ -52,13 +54,13 @@
 <p>You are not legally required to provide any data. The app keeps working without consent to personalised ads or usage statistics. We make no automated decisions with legal effects on you.</p>
 
 <h2>4. Recipients</h2>
-<p>Google Ireland Ltd. and Google LLC (AdMob, Firebase, Google Play, Google Sign-In, Google Drive), as processors or independent controllers under their terms: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>. Book catalogs (Open Library, Internet Archive, Wikisource, OPDS) and the sites you open receive your IP address when contacted. We don't sell your data.</p>
+<p>Google Ireland Ltd. and Google LLC (AdMob, Firebase, Google Cloud Vision, Google Play, Google Sign-In, Google Drive), as processors or independent controllers under their terms: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>. Book catalogs (Open Library, Internet Archive, Wikisource, OPDS) and the sites you open receive your IP address when contacted. We don't sell your data.</p>
 
 <h2>5. Transfers outside the EEA</h2>
 <p>Google may process data in the United States and other countries. Transfers rely on the EU-U.S. Data Privacy Framework, in which Google LLC participates, and on the European Commission's Standard Contractual Clauses.</p>
 
 <h2>6. Retention</h2>
-<p>Crashlytics crash reports are kept for up to 90 days. User-level Analytics data for no longer than 14 months. Ad data is kept by Google under its own rules. Data on the device is kept until you delete it in the app, clear the app's data or uninstall it.</p>
+<p>Photos sent for recognition are not stored by us. Daily usage counters are deleted after 30 days. Crashlytics crash reports are kept for up to 90 days. User-level Analytics data for no longer than 14 months. Ad data is kept by Google under its own rules. Data on the device is kept until you delete it in the app, clear the app's data or uninstall it.</p>
 
 <h2>7. Your rights</h2>
 <ul>

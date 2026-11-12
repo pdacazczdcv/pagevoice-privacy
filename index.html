@@ -39,8 +39,8 @@
 <h2>2. What stays on your device</h2>
 <ul>
   <li>The files, texts, books and photos you open, your library, favorites, bookmarks, positions and reading progress are stored only on your device. We don't receive them or keep them on our servers.</li>
-  <li>Text recognition (OCR) runs on the device (Google ML Kit, Tesseract), except in the Huawei AppGallery version, see section 5.</li>
-  <li>The camera is used only to photograph pages you want read aloud. Photos are not sent anywhere (except in the Huawei version).</li>
+  <li>Text recognition (OCR) runs on the device (Google ML Kit, Tesseract) when you are offline. When you are online, the Google Play version recognizes photos in the cloud and the Huawei version uses Huawei ML Kit, see section 5.</li>
+  <li>The camera is used only to photograph pages you want read aloud. Photos are not sent anywhere except for text recognition as described in section 5.</li>
 </ul>
 
 <h2>3. Speech</h2>
@@ -51,6 +51,7 @@
 
 <h2>5. Third-party services</h2>
 <ul>
+  <li><b>Cloud text recognition</b> (Google Play version, when you are online): a photo you ask the app to read is sent over an encrypted connection to our server in the EU (Firebase Cloud Functions, region europe-west1), which passes it to Google Cloud Vision to get the text back. Photos are used only to return the text and are not stored by us. A random anonymous Firebase user ID (not linked to your name or email) and a daily usage counter are used to limit how many photos one user can send per day; the counter is deleted after 30 days. Firebase App Check confirms that requests come from the genuine app.</li>
   <li><b>Google Sign-In</b> (optional): we receive your name, email address and profile photo to show them in your profile.</li>
   <li><b>Google Drive</b> (optional): read-only access to open the files you pick. We never change or delete anything in your Drive.</li>
   <li><b>Book catalogs and web pages</b>: when you search for or download books (Open Library, Internet Archive, Wikisource, OPDS catalogs) or open links, the app contacts those sites; they see your IP address and handle requests under their own terms.</li>
